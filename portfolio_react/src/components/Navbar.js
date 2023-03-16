@@ -1,44 +1,80 @@
 import React from "react";
 import "./navbar.css";
-// import logo from "../assets/multilogo.png";
+import About from "./About";
+import Portfolio from "./Portfolio";
+import Home from "./Home";
 
-const Navbar = ()=>{
+import {
+  BrowserRouter as Router,
+  Switch,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";// import logo from "../assets/multilogo.png";
+
+ function Navbar() {//   <About id="About"></About>
+// {/* <section id="portfolio">
+//    <h1>Projects</h1>
+//    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+// </section> */}
+// <Portfolio id="portfolio"></Portfolio>
+{/* <section id="Contact">
+    <h1>Contact</h1>
+   <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+</section>  */}
     return (
-<>
-{/* <h1>React Portfolio</h1> */}
+
+<Router>
 <div>
-<nav class="navbar">
+<nav className="navbar" >
   <div id="trapezoid">
-    {/* <a class="sub-home" href="#">Home</a> */}
-    <a href="#About" class="expandHome">About</a>
-     <div class="subnav">
-     <button class="subnavbtn">Portfolio<i class="fa fa-caret-down"></i></button>
-       <div class="subnav-content">
-    
+    <Link to="/about" className="expandHome">About</Link>
+     <div className="subnav">
+     {/* <button className="subnavbtn">Portfolio<i className="fa fa-caret-down"></i></button> */}
+     <Link to="/portfolio" className="expandHome">Portfolio</Link>
+
+       <div className="subnav-content">
+      
        </div>
     </div>
   
-     <div class="subnav">
-     <button class="subnavbtn">Contact<i class="fa fa-caret-down"></i></button>
-       </div>
-    <a href="#" class="expandHome">Resume</a>
+     <div className="subnav">
+     {/* <button className="subnavbtn">Contact<i className="fa fa-caret-down"></i></button> */}
+     <Link to="/contact" className="expandHome">Contact</Link>
+
+      </div>
+    {/* <a href="https://codepen.io/pec-man" className="expandHome">Resume</a> */}
+    <Link to="/resume" className="expandHome">Resume</Link>
+
   </div>
 </nav>
 
-<section id="About">
-  <h1>About</h1>
-  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-</section>
-<section id="portfolio">
-   <h1>Detailed Description</h1>
-   <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-</section>
-<section id="contact">
-    <h1>Services</h1>
-   <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-</section>            
-    </div>        
-</>
+           
+    </div>
+    {/* <Switch> */}
+    <Routes>
+    <Route path="/" element={<Home />} />
+
+    <Route path="/about" element={<About />} />
+    <Route path="/portfolio" element={<Portfolio />} />
+
+          {/* <Route path="/about">
+            <About /> */}
+          {/* </Route> */}
+          {/* <Route path="/portfolio">
+            <Portfolio />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route> */}
+          </Routes>
+        {/* </Switch> */}
+    </Router>
+
+
+
     )
+
+    
 }
 export default Navbar;
