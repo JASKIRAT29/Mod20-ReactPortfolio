@@ -3,6 +3,10 @@ import "./navbar.css";
 import About from "./About";
 import Portfolio from "./Portfolio";
 import Home from "./Home";
+import Footer from "./Footer";
+import Contact from "./Contact";
+import Resume from "./Resume";
+// import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 import {
   BrowserRouter as Router,
@@ -26,8 +30,11 @@ import {
 
 <Router>
 <div>
+
 <nav className="navbar" >
   <div id="trapezoid">
+  <Link to="/" className="expandHome">Home</Link>
+
     <Link to="/about" className="expandHome">About</Link>
      <div className="subnav">
      {/* <button className="subnavbtn">Portfolio<i className="fa fa-caret-down"></i></button> */}
@@ -39,7 +46,6 @@ import {
     </div>
   
      <div className="subnav">
-     {/* <button className="subnavbtn">Contact<i className="fa fa-caret-down"></i></button> */}
      <Link to="/contact" className="expandHome">Contact</Link>
 
       </div>
@@ -48,8 +54,8 @@ import {
 
   </div>
 </nav>
+<Footer />   
 
-           
     </div>
     {/* <Switch> */}
     <Routes>
@@ -57,6 +63,8 @@ import {
 
     <Route path="/about" element={<About />} />
     <Route path="/portfolio" element={<Portfolio />} />
+    <Route path="/contact" element={<Contact />} />
+    <Route path="/resume" element={<Resume />} />
 
           {/* <Route path="/about">
             <About /> */}

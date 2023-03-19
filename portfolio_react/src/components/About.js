@@ -1,13 +1,19 @@
 import React from "react";
 import "./navbar.css";
+import jaskirat from "../assets/jaskiratpic.jpg"
 
 const About = ()=>{
   
 return (
     <>{
         <section id="About">
-        <h1>About</h1>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        <h1>About me</h1>
+        
+        <h2>Creative Developer</h2>
+         <figure>
+                  <img src={jaskirat} className="profile" />
+                </figure>
+        <p>Being enthusiatic developer, learn the full stack development to create new websites with the help of various tools and libraries and also contributed my efforts in projects .</p>
       </section>
 }
 </>)
