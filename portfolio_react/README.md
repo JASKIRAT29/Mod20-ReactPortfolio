@@ -1,70 +1,19 @@
-# Getting Started with Create React App
+# REACT PORTFOLIO
+This application is the foundation for the single-page application that has been built using Reactjs. Reactjs is the library that has diverse features which developers are using nowadays due to its rapid updations in the functionalities.Besides that, it can also be used for the creative website developers who wants to work for bigger organizations by building their personal portfolio containing all the information related to their projects, work & educational background.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Technologies used in Building this application:
+- HTML, CSS, Reactjs(Main Library)..
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Steps Involved:
+-- While developing the single page application, the decent color combination background with the gradient functionality has been applied to make it more catchy.
+-- The single css file has been build for whole application, the working directory of the files are being divided into components called in the src directory as well as assets folder to keep the images for easy access.
+-- The requirements highlighted for theis assignment are more emphasized on the header, footer, and body content in one html page. Header has different tabs named as:
+           - About page: For the brief intro of the author's portfolio.
+           - Home page: This page reflects at the beginning when the website is loaded.
+           - Portfolio page: Which reflects all the projects of the github with the click functionality, when the cursor is placed on  the image it will         redirect to the github where the project has been located.
+           -Contact page: The main feature of this page is validators for the text fields if not entered will pop up the error to make it mandatory. The fields are: name, email and message.
+           - Resume page: It has the button as download button for the author's portfolio resume reflecting all the background of the education, working experience, skills as well as projects.
+           
+Footer has the attributes as linkedIn, facebook, github and instagram icons (reactIcons is used for this) it redirect to the respective pages.
+           
