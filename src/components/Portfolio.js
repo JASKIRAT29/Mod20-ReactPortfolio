@@ -4,6 +4,7 @@ import notetaker from "../assets/notetaker.png";
 import webapi from "../assets/webapi.png";
 import travel_blog from "../assets/travel_blog.png"
 import weather_web from "../assets/project1.png"
+import emperor_dish from "../assets/emperor_dish.jpg"
 
 const Portfolio = ()=>{
     return (
@@ -12,6 +13,15 @@ const Portfolio = ()=>{
    <h2>Projects</h2>
    {/* <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p> */}
    <div class="row">
+   <div class="column">
+    <div class="card">
+        <a href="https://emperors-dish-app.herokuapp.com/"><img src={emperor_dish} title="Emperor Dish App"></img></a>
+      <h3>Emperor Dish App </h3>
+      {/* <p>Some text</p>
+      <p>Some text</p> */}
+    </div>
+  </div>
+
   <div class="column">
     <div class="card">
         <a href="https://github.com/JASKIRAT29/Note-Taker"><img src={notetaker} title="notetaker"></img></a>
@@ -21,6 +31,9 @@ const Portfolio = ()=>{
     </div>
   </div>
 
+
+  </div>
+  <div class="row">
   <div class="column">
     <div class="card">
     <a href="https://github.com/JASKIRAT29/Web-API-Code-Quiz"><img src={webapi} title="quiz"></img></a>
@@ -29,8 +42,6 @@ const Portfolio = ()=>{
       
     </div>
   </div>
-  </div>
-  <div class="row">
   <div class="column" >
     <div class="card">
     <a href="https://github.com/JASKIRAT29/Travel-Blog"><img src={travel_blog} title="Travel Blog"></img></a>
@@ -40,7 +51,10 @@ const Portfolio = ()=>{
     </div>
   </div>
   
-  <div class="column">
+ 
+</div>
+<div class="row">
+<div class="column">
     <div class="card">
     <a href="https://github.com/JASKIRAT29/JASKIRAT-PORTFOLIO.git"><img src={weather_web} title="Jaskirat Portfolio"></img></a>
 
