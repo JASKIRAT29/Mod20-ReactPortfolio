@@ -21,8 +21,8 @@ Footer has the attributes as linkedIn, facebook, github and instagram icons (rea
 ## Clip to describe the functionality:
 ![Untitled_ Mar 19, 2023 10_46 AM](https://user-images.githubusercontent.com/114631240/226183811-785fb93b-01e3-436d-8f8a-092fe4244c3b.gif)
 
-## Deployed Website:
-
+## Heroku Deployed :
+https://mod20reactportfolio.herokuapp.com/
 
 ## License:
 - This project is being licensed by the MIT.
